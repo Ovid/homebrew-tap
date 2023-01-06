@@ -31,6 +31,7 @@ class Postgresql < Formula
       --with-libxslt
       --with-perl
       --with-uuid=e2fs
+      CFLAGS=-Wno-error=implicit-function-declaration
     ]
 
     # The CLT is required to build Tcl support on 10.7 and 10.8 because
