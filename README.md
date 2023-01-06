@@ -1,7 +1,20 @@
 # homebrew-tap
 
-This is Clover Health's Homebrew Tap, which features formulas to help pin
-Postgres to 9.6 and Postgis to 2.5.
+This is a fork of [Clover Health's Homebrew Tap](https://github.com/CloverHealth/homebrew-tap),
+which features formulas to help pin Postgres to 9.6 and Postgis to 2.5.
+
+When running on my Mac, I hit the following error:
+
+```
+configure: error: Cannot find a working 64-bit integer type. #56
+```
+
+[This comment on a different repository resolves the issue](https://github.com/petere/homebrew-postgresql/issues/56#issuecomment-846894408).
+However, I could not directly `brew edit` the file. Thus, I created this
+repository and edited the Ruby code directly. I can now install PostgreSQL 9.6.10.
+
+You may wish to try [Clover Health's Homebrew Tap](https://github.com/CloverHealth/homebrew-tap) before
+this one.
 
 Homebrew will pull in the latest version of formulas when they are upgraded,
 meaning that users can inadvertently be upgraded to Postgresql 10. The
