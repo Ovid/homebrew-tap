@@ -66,7 +66,7 @@ brew install Ovid/tap/postgresql  # yes, without the homebrew-
 ```
 
 Now you will have both 9.6.10 and the latest version of Postgres installed.
-Switch to 9.6.10 with:
+Switch to 9.6.10 with (you may have to replace `switch` with `link`):
 
 ```sh
 brew switch postgresql 9.6.10
